@@ -192,12 +192,12 @@ Example of CART application on the IRIS dataset.
 Application with the Gini index: the following table describes the leaves of the tree obtained as well as the nodes and their optimal splitting. 
 
 ```{r}
-rpart_scratch(iris, "Species", 6, 'gini')
+rpart_scratch(iris, "Species", n_depth = 6, 'gini')
 ```
 
 The following table, which shows the results for the newcrit index, allows us to observe that the choices do not change, whatever the indicator.
 
 ```{r}
-rpart_scratch(iris, "Species", 6, 'newcrit')
+rpart_scratch(iris, "Species", n_depth = 6, 'newcrit')
 ```
 
