@@ -195,7 +195,7 @@ Application with the Gini index: the following table describes the leaves of the
 rpart_scratch(iris, "Species", n_depth = 6, 'gini')
 ```
 
-The following table, which shows the results for the newcrit index, allows us to observe that the choices do not change, whatever the indicator.
+The following table shows the results for the newcrit index.
 
 ```{r}
 rpart_scratch(iris, "Species", n_depth = 6, 'newcrit')
